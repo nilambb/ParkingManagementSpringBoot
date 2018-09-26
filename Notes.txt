@@ -1,0 +1,24 @@
+1. Logs are generared in /logs/parkingManagement.log
+
+2. Steps to run project from command prompt using jar
+	i.  Copy the file parkingManagement.jar  and 
+	ii. in command prompt go to the directory where the jar is copied 
+	iii.run below command
+		java -jar parkingManagement.jar
+
+3. Steps to check the code
+
+	1. Extract the zip file attached to the mail (You can name anything to this folder)/ Download the code from link
+	2. Check if maven configuration are set and JDK path is set.
+	3. open eclipse and import the project using File -> import -> maven -> Existing Maven Project
+	4. If java path is not set to jdk set it to JDK, right click on Project -> Properties -> 	Java Build Path -> Libraries -> JRE System Library 
+		Modify or add to point it to JDK.
+	5. Update the project Right click on project -> Maven -> Update Project
+	6. You can run clean install command to generate jar file
+	7. Or run SpringBootStarter/ParkingApplication class
+	8. Maven command to run project from maven/eclipse - mvn spring-boot:run
+	
+4. Important classes 
+		parking.management.app.ParkingApplication - This class is generated to use the parking service. It will take an input from the user and process the request
+		parking.management.model.Valet - It is main class which will provide all the services. Any other java system can call these methods to use this functinalities
+		
